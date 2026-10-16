@@ -1,0 +1,148 @@
+
+/* General page styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #111;
+  background-color: #fff;
+  line-height: 1.5;
+}
+
+.content {
+  max-width: 1000px;
+  margin: 0 auto;
+  border: 1px solid #777;
+  box-shadow: 2px 2px 0 #111;
+}
+
+/* Header */
+header {
+  padding: 10px 15px 0;
+}
+
+h1 {
+  margin: 0;
+  padding: 0 0 10px;
+  color: #473044;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.7rem;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  gap: 25px;
+  padding: 12px 10px;
+  border-top: 1px solid #e6a36c;
+  border-bottom: 1px solid #e6a36c;
+}
+
+nav a {
+  color: #b00020;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+nav a:hover,
+nav a:focus {
+  text-decoration: underline;
+}
+
+/* Book review layout */
+.book {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 20px 15px;
+}
+
+.book-details {
+  text-align: right;
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+.book-details p {
+  margin: 0 0 8px;
+}
+
+.date {
+  font-weight: bold;
+}
+
+.rating {
+  color: #e6a000;
+  font-size: 1.25rem;
+  letter-spacing: -2px;
+}
+
+.book-review h2 {
+  margin: 15px 0;
+  color: #b00020;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.35rem;
+}
+
+.book-cover {
+  display: block;
+  width: 180px;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto 15px;
+}
+
+.description {
+  margin: 15px 0 0;
+  font-size: 1rem;
+}
+
+/* Footer */
+footer {
+  padding: 10px;
+  border-top: 1px solid #e6a36c;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Larger screens */
+@media screen and (min-width: 700px) {
+  body {
+    padding: 40px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .book {
+    grid-template-columns: 200px 1fr;
+    gap: 25px;
+    padding: 25px;
+  }
+
+  .book-details {
+    padding-right: 20px;
+    border-right: 1px solid #e6a36c;
+  }
+
+  .book-review h2 {
+    margin-top: 0;
+  }
+
+  .book-cover {
+    width: 180px;
+  }
+
+  .description {
+    font-size: 0.95rem;
+  }
+}
