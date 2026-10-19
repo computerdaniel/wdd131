@@ -36,3 +36,15 @@ coursesAndGPA.forEach(item =>{
     console.log(item.courseGPA)
 })
 
+let body = document.querySelector('body');
+
+
+coursesAndGPA.forEach(course => {
+    let dynamicHTML = `
+        <div>
+             <h1>${course.courseName}</h1>
+             <h2>${course.courseGPA}</h2>
+        </div>
+    `   
+    body.innerHTML += dynamicHTML
+})
