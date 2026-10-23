@@ -6,47 +6,37 @@
 
 body {
   margin: 0;
-  padding: 20px;
   font-family: Arial, Helvetica, sans-serif;
-  color: #111;
+  color: #333;
   background-color: #fff;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
-.content {
-  max-width: 1000px;
-  margin: 0 auto;
-  border: 1px solid #777;
-  box-shadow: 2px 2px 0 #111;
-}
-
-/* Header */
 header {
-  padding: 10px 15px 0;
+  padding: 1.5rem;
+  text-align: center;
+  border-bottom: 2px solid #e0a458;
 }
 
-h1 {
-  margin: 0;
-  padding: 0 0 10px;
-  color: #473044;
+header h1 {
+  margin: 0 0 1rem;
   font-family: Georgia, "Times New Roman", serif;
-  font-size: 1.7rem;
-  text-align: center;
+  font-size: 2.5rem;
 }
 
 nav {
   display: flex;
   justify-content: flex-end;
-  gap: 25px;
-  padding: 12px 10px;
-  border-top: 1px solid #e6a36c;
-  border-bottom: 1px solid #e6a36c;
+  gap: 2rem;
+  padding: 0.75rem 0;
+  border-top: 1px solid #e0a458;
+  border-bottom: 1px solid #e0a458;
 }
 
 nav a {
-  color: #b00020;
-  font-size: 0.9rem;
+  color: #5b2500;
   text-decoration: none;
+  font-size: 1.1rem;
 }
 
 nav a:hover,
@@ -54,38 +44,51 @@ nav a:focus {
   text-decoration: underline;
 }
 
-/* Book review layout */
+main {
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* JavaScript inserts all book articles into this section. */
+#book-list {
+  display: grid;
+  gap: 2rem;
+}
+
+/* Individual book article */
 .book {
   display: grid;
-  grid-template-columns: 1fr;
-  padding: 20px 15px;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid #e0a458;
 }
 
 .book-details {
   text-align: right;
-  font-size: 0.9rem;
-  font-style: italic;
+  padding-right: 1.5rem;
+  border-right: 1px solid #e0a458;
 }
 
 .book-details p {
-  margin: 0 0 8px;
+  margin: 0.25rem 0;
 }
 
-.date {
-  font-weight: bold;
-}
-
-.rating {
-  color: #e6a000;
-  font-size: 1.25rem;
-  letter-spacing: -2px;
-}
-
-.book-review h2 {
-  margin: 15px 0;
-  color: #b00020;
+.book-content h2 {
+  margin: 0 0 1rem;
   font-family: Georgia, "Times New Roman", serif;
-  font-size: 1.35rem;
+  font-size: 1.6rem;
+}
+
+.book-content h2 a {
+  color: #5b2500;
+  text-decoration: none;
+}
+
+.book-content h2 a:hover,
+.book-content h2 a:focus {
+  text-decoration: underline;
 }
 
 .book-cover {
@@ -93,56 +96,67 @@ nav a:focus {
   width: 180px;
   max-width: 100%;
   height: auto;
-  margin: 0 auto 15px;
+  margin: 1rem auto;
 }
 
-.description {
-  margin: 15px 0 0;
-  font-size: 1rem;
+.book-description {
+  margin-top: 1rem;
 }
 
-/* Footer */
+.book-rating {
+  margin-top: 1rem;
+  font-size: 1.3rem;
+  letter-spacing: 0.1rem;
+}
+
 footer {
-  padding: 10px;
-  border-top: 1px solid #e6a36c;
+  margin-top: 3rem;
+  padding: 1.5rem;
   text-align: center;
-  font-size: 0.9rem;
+  background-color: #f4eee7;
 }
 
-footer p {
-  margin: 0;
-}
-
-/* Larger screens */
-@media screen and (min-width: 700px) {
-  body {
-    padding: 40px;
+/* Tablet and mobile layouts */
+@media screen and (max-width: 700px) {
+  header {
+    padding: 1rem;
   }
 
-  h1 {
+  header h1 {
     font-size: 2rem;
   }
 
+  nav {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.75rem 1.25rem;
+  }
+
+  nav a {
+    font-size: 1rem;
+  }
+
+  main {
+    margin: 1rem auto;
+  }
+
   .book {
-    grid-template-columns: 200px 1fr;
-    gap: 25px;
-    padding: 25px;
+    grid-template-columns: 1fr;
+    gap: 1rem;
   }
 
   .book-details {
-    padding-right: 20px;
-    border-right: 1px solid #e6a36c;
+    text-align: left;
+    padding: 0 0 1rem;
+    border-right: none;
+    border-bottom: 1px solid #ddd;
   }
 
-  .book-review h2 {
-    margin-top: 0;
+  .book-content h2 {
+    font-size: 1.4rem;
   }
 
   .book-cover {
-    width: 180px;
-  }
-
-  .description {
-    font-size: 0.95rem;
+    width: 160px;
   }
 }
