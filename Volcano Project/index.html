@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="Learn to identify volcano shapes, volcanic rocks, volcanic hazards, and how to safely visit volcanoes.">
+
+  <title>Volcano Explorer | Geology Learning</title>
+
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <!-- HEADER AND NAVIGATION -->
+  <header class="site-header">
+    <div class="header-content">
+      <a class="logo" href="#home">VOLCANO EXPLORER</a>
+
+      <button class="menu-toggle"
+              aria-label="Open navigation"
+              aria-expanded="false">
+        ☰
+      </button>
+
+      <nav class="navigation">
+        <a href="#shapes">Volcano Shapes</a>
+        <a href="#rocks">Volcano Rocks</a>
+        <a href="#hazards">Volcano Hazards</a>
+        <a href="#visiting">Visiting Safely</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p class="eyebrow">GEOLOGY EXPLORATION GUIDE</p>
+
+        <h1>Discover the World of Volcanoes</h1>
+
+        <p>
+          Learn to recognize volcano shapes, identify volcanic rocks,
+          understand volcanic hazards, and explore volcanoes safely.
+        </p>
+
+        <a class="button" href="#shapes">Start Exploring</a>
+      </div>
+    </section>
+
+    <!-- INTRODUCTION -->
+    <section class="intro section">
+      <p class="eyebrow">WELCOME, EXPLORER</p>
+
+      <h2>What Makes Volcanoes Different?</h2>
+
+      <p>
+        Volcanoes come in different shapes and sizes. The type of lava,
+        how it cools, and how a volcano erupts help determine its
+        appearance and the hazards it can create.
+      </p>
+
+      <div class="intro-grid">
+        <div>
+          <span>01</span>
+          <h3>Identify Shapes</h3>
+          <p>Recognize the three major volcano forms.</p>
+        </div>
+
+        <div>
+          <span>02</span>
+          <h3>Explore Rocks</h3>
+          <p>Use texture and composition to identify igneous rocks.</p>
+        </div>
+
+        <div>
+          <span>03</span>
+          <h3>Understand Hazards</h3>
+          <p>Learn how volcanic activity affects people and places.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 1: VOLCANO SHAPES -->
+    <section class="section section-alt" id="shapes">
+
+      <div class="section-heading">
+        <p class="eyebrow">SECTION 01</p>
+
+        <h2>Identifying Volcano Shapes</h2>
+
+        <p>
+          Volcanoes can be identified by their shape, slope, and summit.
+          Learn about the three major types below.
+        </p>
+      </div>
+
+      <div class="feature-grid">
+
+        <!-- SHIELD VOLCANO -->
+        <article class="info-card">
+          <img
+            src="https://commons.wikimedia.org/wiki/Special:FilePath/Shield_volcano.jpg"
+            alt="Diagram of a broad shield volcano with gently sloping sides">
+
+          <div class="card-content">
+            <h3>Shield Volcano</h3>
+
+            <p>
+              A broad volcano with gentle slopes. It forms from fluid,
+              low-viscosity lava that spreads over long distances.
+            </p>
+
+            <p class="caption">
+              <strong>How to recognize it:</strong>
+              Look for a wide, gently sloping shape resembling
+              a warrior's shield.
+            </p>
+
+            <p class="example">
+              Example: Mauna Loa, Hawaii
+            </p>
+          </div>
+        </article>
+
+        <!-- STRATOVOLCANO -->
+        <article class="info-card">
+          <img
+            src="https://commons.wikimedia.org/wiki/Special:FilePath/Mayon%2C%20the%20Perfect-coned%20Volcano.jpg"
+            alt="Mayon volcano showing its steep, symmetrical cone">
+
+          <div class="card-content">
+            <h3>Stratovolcano</h3>
+
+            <p>
+              A tall, steep-sided volcano built from alternating
+              layers of lava, ash, and other volcanic materials.
+            </p>
+
+            <p class="caption">
+              <strong>How to recognize it:</strong>
+              Look for a steep, cone-shaped mountain with
+              a defined summit.
+            </p>
+
+            <p class="example">
+              Example: Mount Fuji, Japan
+            </p>
+          </div>
+        </article>
+
+        <!-- CALDERA -->
+        <article class="info-card">
+          <img
+            src="https://commons.wikimedia.org/wiki/Special:FilePath/Crater_Lake_and_Wizard_Island_with_snow-covered_caldera_rim_June_2025.jpg"
+            alt="Crater Lake filling the caldera of Mount Mazama">
+
+          <div class="card-content">
+            <h3>Caldera Volcano</h3>
+
+            <p>
+              A large basin-shaped depression formed when a volcano's
+              summit collapses after a major eruption or magma withdrawal.
+            </p>
+
+            <p class="caption">
+              <strong>How to recognize it:</strong>
+              Look for a large, circular depression or crater-like basin.
+            </p>
+
+            <p class="example">
+              Example: Crater Lake, Oregon
+            </p>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- VOLCANO SHAPE QUIZ -->
+      <div class="practice-box">
+
+        <h3>Try It: Identify These Volcanoes</h3>
+
+        <p>
+          Use the shape clues to identify each volcano.
+        </p>
+
+        <div class="quiz-grid">
+
+          <!-- VOLCANO A -->
+          <div class="quiz-card">
+            <img
+              src="https://commons.wikimedia.org/wiki/Special:FilePath/Mount_Rainier_from_Paradise.jpg"
+              alt="Mount Rainier, a tall cone-shaped stratovolcano">
+
+            <h4>Volcano A</h4>
+
+            <p>
+              This volcano is tall, steep-sided, and built from
+              layers of lava and ash.
+            </p>
+
+            <label for="shape-a">Your answer:</label>
+
+            <select id="shape-a">
+              <option value="">Choose a type</option>
+              <option value="shield">Shield volcano</option>
+              <option value="stratovolcano">Stratovolcano</option>
+              <option value="caldera">Caldera volcano</option>
+            </select>
+          </div>
+
+          <!-- VOLCANO B -->
+          <div class="quiz-card">
+            <img
+              src="https://commons.wikimedia.org/wiki/Special:FilePath/Mauna_Loa_Volcano.jpg"
+              alt="Mauna Loa showing its broad, gently sloping shape">
+
+            <h4>Volcano B</h4>
+
+            <p>
+              This volcano is extremely wide and has gentle slopes
+              formed by fluid lava.
+            </p>
+
+            <label for="shape-b">Your answer:</label>
+
+            <select id="shape-b">
+              <option value="">Choose a type</option>
+              <option value="shield">Shield volcano</option>
+              <option value="stratovolcano">Stratovolcano</option>
+              <option value="caldera">Caldera volcano</option>
+            </select>
+          </div>
+
+        </div>
+
+        <button class="button" id="check-shapes">
+          Check Answers
+        </button>
+
+        <p class="quiz-feedback" id="shape-feedback" aria-live="polite"></p>
+
+        <details class="answer-key">
+          <summary>Open Volcano Shape Answer Key</summary>
+
+          <p>
+            <strong>Volcano A:</strong>
+            Stratovolcano. Its steep cone and layered structure
+            are characteristic of stratovolcanoes.
+          </p>
+
+          <p>
+            <strong>Volcano B:</strong>
+            Shield volcano. Its broad profile and gentle slopes
+            form from fluid lava flows.
+          </p>
+        </details>
+
+      </div>
+    </section>
+
+    <!-- SECTION 2: VOLCANO ROCKS -->
+    <section class="section" id="rocks">
+
+      <div class="section-heading">
+        <p class="eyebrow">SECTION 02</p>
+
+        <h2>Identifying Volcano Rocks</h2>
+
+        <p>
+          Igneous rocks form when magma or lava cools.
+          Their texture and mineral composition help us identify them.
+        </p>
+      </div>
+
+      <!-- TEXTURE -->
+      <h3 class="subheading">Step 1: Identify the Texture</h3>
+
+      <p>
+        Intrusive rocks form underground and cool slowly, allowing
+        large crystals to grow. Extrusive rocks form at or near
+        Earth's surface and cool quickly, creating small crystals
+        or a fine-grained texture.
+      </p>
+
+      <div class="feature-grid two">
+
+        <!-- INTRUSIVE -->
+        <article class="info-card">
+          <img
+            src="https://commons.wikimedia.org/wiki/Special:FilePath/Granite_closeup.jpg"
+            alt="Granite showing large visible mineral crystals">
+
+          <div class="card-content">
+            <h3>Intrusive Texture</h3>
+
+            <p>
+              Large, visible crystals. Slow cooling underground
+              gives minerals time to grow.
+            </p>
+
+            <p class="caption">
+              <strong>Look for:</strong>
+              Crystals that are easy to see, often with
+              different colored minerals.
+            </p>
+
+            <p class="example">
+              Examples: Granite, diorite, and gabbro
+            </p>
+          </div>
+        </article>
+
+        <!-- EXTRUSIVE -->
+        <article class="info-card">
+          <img
+            src="https://commons.wikimedia.org/wiki/Special:FilePath/Basalt_Rock_by_Halverson_Lake%2C_Idaho.jpg"
+            alt="Basalt showing a dark, fine-grained texture">
+
+          <div class="card-content">
+            <h3>Extrusive Texture</h3>
+
+            <p>
+              Small crystals or a fine-grained appearance.
+              Rapid cooling prevents large crystals from growing.
+            </p>
+
+            <p class="caption">
+              <strong>Look for:</strong>
+              A smooth or fine-grained surface where individual
+              crystals are difficult to see.
+            </p>
+
+            <p class="example">
+              Examples: Rhyolite, andesite, and basalt
+            </p>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- COMPOSITION -->
+      <h3 class="subheading">Step 2: Identify the Composition</h3>
+
+      <p>
+        Composition describes the minerals and silica content
+        of a rock. Color can provide a clue, but it should be
+        used with texture and other mineral characteristics.
+      </p>
+
+      <div class="feature-grid three">
+
+        <!-- FELSIC -->
+        <article class="info-card">
+          <img
+            src="https://commons.wikimedia.org/wiki/Special:FilePath/Granite_closeup.jpg"
+            alt="Light-colored granite with quartz and feldspar">
+
+          <div class="card-content">
+            <h3>High Silica (Felsic)</h3>
+
+            <p>
+              Usually light-colored, with abundant quartz and
+              feldspar. Generally has higher silica content.
+            </p>
+
+            <p class="caption">
+              Look for pink, white, or light gray minerals.
+            </p>
+          </div>
+        </article>
+
+        <!-- INTERMEDIATE -->
+        <article class="info-card">
+          <img
+            src="https://commons.wikimedia.org/wiki/Special:FilePath/Andesite.jpg"
+            alt="Andesite with a medium gray appearance">
+
+          <div class="card-content">
+            <h3>Intermediate</h3>
+
+            <p>
+              Has a composition between felsic and mafic rocks.
+              Often appears medium gray.
+            </p>
+
+            <p class="caption">
+              Look for a medium-colored rock.
+            </p>
+          </div>
+        </article>
+
+        <!-- MAFIC -->
+        <article class="info-card">
+          <img
+            src="https://commons.wikimedia.org/wiki/Special:FilePath/Gabbro_closeup.jpg"
+            alt="Dark gabbro containing dark minerals">
+
+          <div class="card-content">
+            <h3>High Iron (Mafic)</h3>
+
+            <p>
+              Rich in iron and magnesium and generally lower
+              in silica. Often dark-colored.
+            </p>
+
+            <p class="caption">
+              Look for dark gray, black, or greenish minerals.
+            </p>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- ROCK IDENTIFICATION TABLE -->
+      <div class="rock-guide">
+
+        <h3>Step 3: Use Texture + Composition</h3>
+
+        <p>
+          Combine the cooling environment with the composition
+          to identify the rock. Intrusive and extrusive rocks
+          can have similar chemistry but different crystal sizes.
+        </p>
+
+        <div class="rock-table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Composition</th>
+                <th>Intrusive (Slow Cooling)</th>
+                <th>Extrusive (Fast Cooling)</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>High silica / felsic</td>
+                <td>Granite</td>
+                <td>Rhyolite</td>
+              </tr>
+
+              <tr>
+                <td>Intermediate</td>
+                <td>Diorite</td>
+                <td>Andesite</td>
+              </tr>
+
+              <tr>
+                <td>High iron / mafic</td>
+                <td>Gabbro</td>
+                <td>Basalt</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p class="note">
+          Remember: granite, diorite, and gabbro are intrusive
+          igneous rocks. Rhyolite, andesite, and basalt are
+          extrusive volcanic rocks.
+        </p>
+
+      </div>
+
+      <!-- ROCK QUIZ -->
+      <div class="practice-box">
+
+        <h3>Try It: Identify the Rocks</h3>
+
+        <p>
+          Use the texture and composition clues to identify each sample.
+        </p>
+
+        <div class="quiz-grid">
+
+          <!-- ROCK A -->
+          <div class="quiz-card">
+            <img
+              src="https://commons.wikimedia.org/wiki/Special:FilePath/Rhyolite_closeup.jpg"
+              alt="Light-colored rhyolite rock">
+
+            <h4>Rock A</h4>
+
+            <p>
+              Fine-grained texture and high-silica composition.
+            </p>
+
+            <label for="rock-a">Your answer:</label>
+
+            <select id="rock-a">
+              <option value="">Choose a rock</option>
+              <option>Granite</option>
+              <option>Diorite</option>
+              <option>Gabbro</option>
+              <option>Rhyolite</option>
+              <option>Andesite</option>
+              <option>Basalt</option>
+            </select>
+          </div>
+
+          <!-- ROCK B -->
+          <div class="quiz-card">
+            <img
+              src="https://commons.wikimedia.org/wiki/Special:FilePath/Gabbro_closeup.jpg"
+              alt="Dark coarse-grained gabbro">
+
+            <h4>Rock B</h4>
+
+            <p>
+              Large visible crystals and high-iron composition.
+            </p>
+
+            <label for="rock-b">Your answer:</label>
+
+            <select id="rock-b">
+              <option value="">Choose a rock</option>
+              <option>Granite</option>
+              <option>Diorite</option>
+              <option>Gabbro</option>
+              <option>Rhyolite</option>
+              <option>Andesite</option>
+              <option>Basalt</option>
+            </select>
+          </div>
+
+        </div>
+
+        <button class="button" id="check-rocks">
+          Check Answers
+        </button>
+
+        <p class="quiz-feedback" id="rock-feedback" aria-live="polite"></p>
+
+        <details class="answer-key">
+          <summary>Open Volcano Rock Answer Key</summary>
+
+          <p>
+            <strong>Rock A:</strong>
+            Rhyolite. It is extrusive and felsic, so it has
+            fine-grained texture and high silica.
+          </p>
+
+          <p>
+            <strong>Rock B:</strong>
+            Gabbro. It is intrusive and mafic, so it has
+            large crystals and high iron and magnesium.
+          </p>
+        </details>
+
+      </div>
+    </section>
+
+    <!-- SECTION 3: VOLCANO HAZARDS -->
+    <section class="section section-alt" id="hazards">
+
+      <div class="section-heading">
+        <p class="eyebrow">SECTION 03</p>
+
+        <h2>Identifying Volcano Hazards</h2>
+
+        <p>
+          Volcanic hazards can affect areas near a volcano and
+          communities many miles away. Different volcanoes can
+          produce different hazards.
+        </p>
+      </div>
+
+      <div class="hazard-grid">
+
+        <!-- LAVA FLOWS -->
+        <article class="hazard-card">
+          <img
+            src="imgs/multimediaFile-2060.jpg"
+            alt="Lava flow from Kilauea volcano">
+
+          <h3>Lava Flows</h3>
+
+          <p>
+            Molten rock that flows across Earth's surface.
+            It can burn, bury, and destroy buildings and roads.
+          </p>
+
+          <p>
+            <strong>Common with:</strong>
+            Shield volcanoes, stratovolcanoes, and other volcanic types.
+          </p>
+        </article>
+
+        <!-- PYROCLASTIC FLOWS -->
+        <article class="hazard-card">
+          <img
+            src="imgs/vhp_img3287.jpg"
+            alt="Pyroclastic flow traveling down a volcano">
+
+          <h3>Pyroclastic Flows</h3>
+
+          <p>
+            Fast-moving, extremely hot mixtures of gas, ash,
+            and volcanic fragments that travel down volcano slopes.
+          </p>
+
+          <p>
+            <strong>Common with:</strong>
+            Stratovolcanoes and explosive caldera-forming eruptions.
+          </p>
+        </article>
+
+        <!-- LAHARS -->
+        <article class="hazard-card">
+          <img
+            src="imgs/img529_400w_267h.jpg"
+            alt="Lahar carrying volcanic mud and debris">
+
+          <h3>Lahars</h3>
+
+          <p>
+            Dangerous flows of water, mud, and volcanic debris
+            that move down valleys and river channels.
+          </p>
+
+          <p>
+            <strong>Common with:</strong>
+            Stratovolcanoes, especially those with snow, ice,
+            or loose volcanic ash.
+          </p>
+        </article>
+
+        <!-- ASH CLOUDS -->
+        <article class="hazard-card">
+          <img
+            src="imgs/Ash_Plume_From_Explosive_Eruption_at_Sheveluch_Volcano_(CIRA_2024-11-08).png"
+            alt="Volcanic ash plume rising from an explosive eruption">
+
+          <h3>Ash Clouds</h3>
+
+          <p>
+            Fine fragments of volcanic rock and glass blasted
+            into the atmosphere. Ash can harm breathing,
+            damage engines, and disrupt travel.
+          </p>
+
+          <p>
+            <strong>Common with:</strong>
+            Explosive stratovolcanoes and caldera systems.
+          </p>
+        </article>
+
+        <!-- VOLCANIC GASES -->
+        <article class="hazard-card">
+          <img
+            src="imgs/DESMITHER_202610220913_8998.jpg"
+            alt="Volcanic gases and steam rising from a volcanic vent">
+
+          <h3>Volcanic Gases</h3>
+
+          <p>
+            Gases such as sulfur dioxide and carbon dioxide
+            can irritate lungs, create dangerous air conditions,
+            or collect in low areas.
+          </p>
+
+          <p>
+            <strong>Common with:</strong>
+            All volcano types, including shield volcanoes
+            and stratovolcanoes.
+          </p>
+        </article>
+
+        <!-- CLIMATE CHANGE -->
+        <article class="hazard-card">
+          <img
+            src="https://commons.wikimedia.org/wiki/Special:FilePath/Eruption_of_Eyjafjallaj%C3%B6kull_Volcano%2C_Iceland_as_seen_by_MODIS.jpg"
+            alt="Large volcanic ash plume rising into the atmosphere">
+
+          <h3>Climate Change</h3>
+
+          <p>
+            Large explosive eruptions can send sulfur gases
+            into the stratosphere, forming aerosols that
+            reflect sunlight and temporarily cool Earth's surface.
+          </p>
+
+          <p>
+            <strong>Common with:</strong>
+            Large explosive stratovolcano eruptions and
+            caldera-forming eruptions.
+          </p>
+        </article>
+
+      </div>
+
+      <div class="safety-callout">
+        <h3>Remember</h3>
+
+        <p>
+          Volcano hazards are not limited to the crater.
+          Ash, lahars, gases, and other hazards can travel
+          far from the volcano. Always follow official alerts
+          and evacuation instructions.
+        </p>
+      </div>
+
+    </section>
+
+    <!-- SECTION 4: VISITING VOLCANOES -->
+    <section class="section" id="visiting">
+
+      <div class="section-heading">
+        <p class="eyebrow">SECTION 04</p>
+
+        <h2>What to Do When Visiting a Volcano</h2>
+
+        <p>
+          Volcanoes can be amazing places to explore, but they
+          are active natural environments. Preparation and
+          awareness help keep visitors safe.
+        </p>
+      </div>
+
+      <div class="visit-grid">
+
+        <!-- BEFORE VISITING -->
+        <article class="visit-card">
+          <h3>Before Your Visit</h3>
+
+          <ul>
+            <li>Check the volcano alert level and current conditions.</li>
+            <li>Read official park and volcano observatory safety notices.</li>
+            <li>Stay on open, approved trails and viewing areas.</li>
+            <li>Bring water, food, sturdy shoes, and weather-appropriate clothing.</li>
+            <li>Carry a map, charged phone, and emergency supplies.</li>
+            <li>Know evacuation routes and where to find higher ground.</li>
+            <li>Check for air-quality and volcanic gas warnings.</li>
+          </ul>
+        </article>
+
+        <!-- WHILE VISITING -->
+        <article class="visit-card">
+          <h3>While Visiting</h3>
+
+          <ul>
+            <li>Follow signs, barriers, and instructions from park staff.</li>
+            <li>Never enter closed areas or approach active vents.</li>
+            <li>Stay away from crater edges, unstable ground, and lava flows.</li>
+            <li>Avoid valleys and river channels during lahar warnings.</li>
+            <li>Move away from ash or gas if authorities advise evacuation.</li>
+            <li>Protect your eyes and breathing during ashfall.</li>
+            <li>Leave immediately when officials issue an evacuation order.</li>
+          </ul>
+        </article>
+
+      </div>
+
+      <div class="safety-callout">
+        <h3>Volcano Safety Rule</h3>
+
+        <p>
+          If a volcano becomes active or conditions change,
+          do not wait to see what happens. Follow official
+          instructions and move to a safe location.
+        </p>
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+
+    <p>Volcano Explorer | Geology Learning Resource</p>
+
+    <p>
+      Educational content. Always follow official volcano
+      and park safety guidance.
+    </p>
+
+    <p class="sources">
+      Learn more:
+      <a href="https://www.usgs.gov/programs/VHP"
+         target="_blank"
+         rel="noopener">
+        USGS Volcano Hazards Program
+      </a>
+      |
+      <a href="https://www.nps.gov/subjects/volcanoes/index.htm"
+         target="_blank"
+         rel="noopener">
+        National Park Service
+      </a>
+    </p>
+
+    <p>
+      Image sources:
+      <a href="https://commons.wikimedia.org/wiki/Category:Volcanoes"
+         target="_blank"
+         rel="noopener">
+        Wikimedia Commons
+      </a>
+      |
+      <a href="https://www.usgs.gov/programs/VHP/multimedia/images"
+         target="_blank"
+         rel="noopener">
+        USGS Images
+      </a>
+    </p>
+
+  </footer>
+
+</body>
+</html>
