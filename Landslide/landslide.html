@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A side-by-side comparison of two California homes and their relative landslide risk.">
+  <title>Grounded | A Landslide Risk Home Comparison</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="landslide.css">
+  <script src="landslide.js" defer></script>
+</head>
+
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Grounded home">
+      <span class="brand-mark">G</span> GROUNDED
+    </a>
+
+    <nav aria-label="Main navigation">
+      <a href="#comparison">The homes</a>
+      <a href="#risk">Risk analysis</a>
+      <a href="#sources">Sources</a>
+    </nav>
+  </header>
+
+  <main id="top">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">PROPERTY • GEOLOGY • REAL-WORLD RISK</p>
+
+        <h1>Beautiful homes.<br><em>Very different ground.</em></h1>
+
+        <p class="hero-intro">
+          A side-by-side look at two California properties—and how slope,
+          rainfall, and documented ground movement can change the risk
+          beneath a home.
+        </p>
+
+        <a class="hero-link" href="#comparison">
+          Explore the comparison <span aria-hidden="true">↓</span>
+        </a>
+      </div>
+
+      <div class="hero-art" role="img" aria-label="Illustration of a house on a hillside above layered earth">
+        <div class="sun"></div>
+        <div class="hill hill-back"></div>
+        <div class="hill hill-front"></div>
+        <div class="hero-house"><span></span><i></i></div>
+        <div class="earth-line"></div>
+        <p>LOOK BELOW THE SURFACE</p>
+      </div>
+    </section>
+
+    <section class="intro-strip">
+      <p>
+        <strong>THE QUESTION:</strong>
+        Which property offers a safer foundation—and what evidence supports that conclusion?
+      </p>
+      <span>CASE STUDY · CALIFORNIA</span>
+    </section>
+
+    <!-- PROPERTY COMPARISON -->
+    <section class="section" id="comparison">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">01 / THE PROPERTIES</p>
+          <h2>Two homes, side by side</h2>
+        </div>
+
+        <p class="section-note">
+          Listing details reflect sources accessed November 2026.
+          Confirm current status and disclosures with the listing agent.
+        </p>
+      </div>
+
+      <div class="property-grid">
+
+        <!-- HIGH RISK HOUSE -->
+        <article class="property-card high-card">
+          <div class="property-image">
+            <img
+              src="https://photos.zillowstatic.com/fp/e4953f55908dc95b428169f011e97541-cc_ft_960.jpg"
+              alt="Zillow listing photo of 189 Kent Road in Pacifica, California"
+              loading="lazy"
+            >
+
+            <span class="photo-label">PACIFICA · OCEANFRONT</span>
+            <span class="photo-credit">Photo: Zillow listing</span>
+          </div>
+
+          <div class="property-content">
+            <div class="card-topline">
+              <span class="risk-tag risk-high">VERY HIGH RISK</span>
+              <span class="listing-status">Verify current status*</span>
+            </div>
+
+            <h3>189 Kent Road</h3>
+            <p class="location">Pacifica, CA 94044 · Pedro Point</p>
+
+            <p class="price">
+              $529,000 <small>asking price</small>
+            </p>
+
+            <div class="stats">
+              <div><strong>3,910</strong><span>sq ft</span></div>
+              <div><strong>4</strong><span>beds*</span></div>
+              <div><strong>4</strong><span>baths*</span></div>
+              <div><strong>2003</strong><span>built</span></div>
+            </div>
+
+            <p class="sales-pitch">
+              Imagine waking up to sweeping Pacific Ocean and Linda Mar Beach
+              views. This large, two-story home has an attached four-car garage
+              and a dramatic coastal setting. It has the kind of oceanfront
+              location buyers dream about—but the ground beneath it has a
+              serious, documented problem.
+            </p>
+
+            <a
+              class="source-link"
+              href="https://www.zillow.com/homedetails/189-Kent-Rd-Pacifica-CA-94044/58660690_zpid/"
+              target="_blank"
+              rel="noopener"
+            >
+              View property listing ↗
+            </a>
+
+            <p class="fine-print">
+              *Listing sites show 4 beds / 4 baths in the current listing
+              facts; marketing remarks describe the home as 6 beds / 4.5 baths.
+              Verify with the listing agent. Listing status can change.
+            </p>
+          </div>
+        </article>
+
+        <!-- LOW RISK HOUSE -->
+        <article class="property-card low-card">
+          <div class="property-image">
+            <img
+              src="https://photos.zillowstatic.com/fp/479cb53739b09ef3e09de2c08ceb9c6a-cc_ft_960.jpg"
+              alt="Zillow listing photo of 4328 62nd Street in Sacramento, California"
+              loading="lazy"
+            >
+
+            <span class="photo-label">SACRAMENTO · RESIDENTIAL NEIGHBORHOOD</span>
+            <span class="photo-credit">Photo: Zillow listing</span>
+          </div>
+
+          <div class="property-content">
+            <div class="card-topline">
+              <span class="risk-tag risk-low">VERY LOW RISK</span>
+              <span class="listing-status">Sold · Sept. 2026</span>
+            </div>
+
+            <h3>4328 62nd Street</h3>
+            <p class="location">Sacramento, CA 95820 · Tallac Village</p>
+
+            <p class="price">
+              $431,000 <small>reported sale price</small>
+            </p>
+
+            <div class="stats">
+              <div><strong>1,134</strong><span>sq ft</span></div>
+              <div><strong>2</strong><span>beds</span></div>
+              <div><strong>1</strong><span>bath</span></div>
+              <div><strong>1950</strong><span>built</span></div>
+            </div>
+
+            <p class="sales-pitch">
+              This charming single-story home offers vintage character,
+              wood flooring, a cozy fireplace, natural light, and a generous
+              backyard with mature landscaping and a patio. Its established
+              neighborhood and relatively level Sacramento setting make it
+              an appealing everyday home.
+            </p>
+
+            <a
+              class="source-link"
+              href="https://www.zillow.com/homedetails/4328-62nd-St-Sacramento-CA-95820/25811166_zpid/"
+              target="_blank"
+              rel="noopener"
+            >
+              View property listing ↗
+            </a>
+
+            <p class="fine-print">
+              Sold September 9, 2026, for $431,000 according to the listing
+              history / MetroList data shown by Zillow.
+            </p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- RISK ANALYSIS -->
+    <section class="section risk-section" id="risk">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">02 / WHAT'S UNDER THE HOUSE?</p>
+          <h2>Why the risk is so different</h2>
+        </div>
+
+        <p class="section-note">
+          These are educational, property-level comparisons—not engineering
+          inspections or official hazard determinations.
+        </p>
+      </div>
+
+      <div class="risk-grid">
+
+        <!-- PACIFICA RISK -->
+        <article class="risk-panel">
+          <div class="risk-panel-heading">
+            <span class="risk-tag risk-high">VERY HIGH</span>
+            <h3>189 Kent Road · Pacifica</h3>
+          </div>
+
+          <figure class="risk-photo">
+            <img
+              src="https://d9-wret.s3.us-west-2.amazonaws.com/assets/palladium/production/s3fs-public/media/images/EN9Pacificacliffapartments.jpg"
+              alt="Eroding coastal cliff in Pacifica, California, with buildings near the bluff edge"
+              loading="lazy"
+            >
+            <figcaption>
+              Regional example of coastal bluff erosion in Pacifica.
+              This photograph illustrates the area's coastal slope hazards;
+              it is not a photograph of the exact property.
+              Source:
+              <a href="https://www.usgs.gov/" target="_blank" rel="noopener">U.S. Geological Survey</a>.
+            </figcaption>
+          </figure>
+
+          <h4>Why this property has very high landslide risk</h4>
+
+          <ul class="evidence-list">
+            <li>
+              <strong>Documented landslide damage:</strong>
+              The property listing explicitly reports major foundation
+              and structural issues related to landslide activity.
+            </li>
+
+            <li>
+              <strong>Geotechnical warning:</strong>
+              The seller's geotechnical engineers reportedly do not
+              recommend occupying or renting the property.
+            </li>
+
+            <li>
+              <strong>Coastal slope setting:</strong>
+              Pedro Point is a coastal bluff and hillside environment
+              exposed to erosion and slope instability. Pacifica planning
+              documents identify bluff erosion and landslides among
+              local hazards.
+            </li>
+
+            <li>
+              <strong>Rainfall trigger:</strong>
+              A nearby NOAA climate station, Pacifica 4 SSE, records
+              about 31.88 inches of normal annual precipitation.
+              December averages 6.64 inches. Saturated soil can add
+              weight and reduce slope strength.
+            </li>
+
+            <li>
+              <strong>Coastal erosion:</strong>
+              Ocean waves can wear away the base of coastal cliffs.
+              This can remove support from the slope and contribute
+              to instability over time.
+            </li>
+
+            <li>
+              <strong>Mitigation:</strong>
+              No completed, verified stabilization system is established
+              by the public listing. The disclosed structural damage
+              means buyers should not assume repairs or retaining
+              structures have made it safe.
+            </li>
+          </ul>
+
+          <p class="verdict">
+            The listing's own geotechnical disclosure is the decisive
+            evidence. This is a very high-risk example, not merely a
+            home with a scenic hillside view.
+          </p>
+        </article>
+
+        <!-- SACRAMENTO RISK -->
+        <article class="risk-panel">
+          <div class="risk-panel-heading">
+            <span class="risk-tag risk-low">VERY LOW</span>
+            <h3>4328 62nd Street · Sacramento</h3>
+          </div>
+
+          <figure class="risk-photo">
+            <img
+              src="https://photos.zillowstatic.com/fp/479cb53739b09ef3e09de2c08ceb9c6a-cc_ft_960.jpg"
+              alt="Zillow listing photograph of the house at 4328 62nd Street in Sacramento"
+              loading="lazy"
+            >
+            <figcaption>
+              The actual property photograph from the Zillow listing
+              for 4328 62nd Street, Sacramento.
+              Photo: Zillow.
+            </figcaption>
+          </figure>
+
+          <h4>Why this property has very low landslide risk</h4>
+
+          <ul class="evidence-list">
+            <li>
+              <strong>Relatively flat terrain:</strong>
+              Sacramento is located in the relatively flat Sacramento
+              Valley. This property is in an established residential
+              neighborhood rather than on a steep hillside or coastal bluff.
+            </li>
+
+            <li>
+              <strong>Low slope instability:</strong>
+              Landslides generally require a slope or unstable mass of
+              earth that can move downhill. The relatively level setting
+              gives this property much less landslide exposure than
+              the Pacifica home.
+            </li>
+
+            <li>
+              <strong>City assessment:</strong>
+              The City of Sacramento's Climate Vulnerability Assessment
+              states that landslides are not a major threat to the city
+              because of its flat terrain.
+            </li>
+
+            <li>
+              <strong>Rainfall comparison:</strong>
+              Sacramento receives approximately 19.2 inches of average
+              annual precipitation, compared with about 31.88 inches
+              at the Pacifica NOAA station. Rainfall alone does not
+              determine landslide risk, but it is useful context.
+            </li>
+
+            <li>
+              <strong>Property listing:</strong>
+              The available listing information does not report
+              landslide-related foundation or structural damage.
+              This is not proof that no damage exists, but it contrasts
+              with the explicit disclosure for the Pacifica property.
+            </li>
+
+            <li>
+              <strong>Mitigation:</strong>
+              No special landslide stabilization system is documented
+              in the public listing. The low comparative risk is mainly
+              due to the naturally level setting, not a claimed
+              engineered repair.
+            </li>
+          </ul>
+
+          <p class="verdict">
+            The property's relatively flat setting and the city's
+            assessment support a very low comparative landslide-risk
+            rating. Normal home inspections and drainage checks are
+            still important.
+          </p>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- RAINFALL COMPARISON -->
+    <section class="section rainfall-section">
+      <div class="rainfall-heading">
+        <p class="eyebrow">A CLOSER LOOK AT RAINFALL</p>
+        <h2>Water matters, but terrain matters too.</h2>
+
+        <p>
+          Pacifica's nearby NOAA station has a wetter normal year than
+          Sacramento. However, the most important contrast is that the
+          Pacifica property has known landslide-related structural damage
+          on coastal terrain, while the Sacramento property sits in a much
+          flatter urban setting. A storm can trigger movement where
+          unstable slopes already exist; rain by itself is not a
+          landslide-risk rating.
+        </p>
+      </div>
+
+      <div class="rainfall-bars">
+        <div class="rainfall-item">
+          <div class="rainfall-label">
+            <strong>Pacifica, CA</strong>
+            <span>31.88 inches / year</span>
+          </div>
+          <div class="bar-track">
+            <div class="bar-fill pacifica-bar"></div>
+          </div>
+        </div>
+
+        <div class="rainfall-item">
+          <div class="rainfall-label">
+            <strong>Sacramento, CA</strong>
+            <span>19.2 inches / year</span>
+          </div>
+          <div class="bar-track">
+            <div class="bar-fill sacramento-bar"></div>
+          </div>
+        </div>
+      </div>
+
+      <p class="chart-note">
+        Approximate normal / average annual precipitation. Sources and
+        measurement periods differ; values are provided for general
+        regional comparison, not as a parcel-specific prediction.
+      </p>
+    </section>
+
+    <!-- TAKEAWAY -->
+    <section class="section takeaway">
+      <p class="eyebrow">03 / THE TAKEAWAY</p>
+
+      <h2>Don't just look at the view.<br><em>Investigate the ground.</em></h2>
+
+      <div class="takeaway-columns">
+        <p>
+          189 Kent Road has a spectacular oceanfront setting, but the
+          reported landslide damage and geotechnical warning make it a
+          very high-risk property. Its low asking price should not be
+          mistaken for a bargain without major professional investigation.
+        </p>
+
+        <p>
+          4328 62nd Street is less dramatic, but its relatively level
+          location and lack of disclosed landslide damage support a very
+          low comparative landslide-risk rating. Buyers should still
+          inspect drainage, foundation condition, flood exposure, and
+          local hazard maps.
+        </p>
+      </div>
+
+      <button
+        id="method-toggle"
+        class="method-button"
+        type="button"
+        aria-expanded="false"
+        aria-controls="method-details"
+      >
+        How was the risk rating assigned?
+        <span aria-hidden="true">+</span>
+      </button>
+
+      <div id="method-details" class="method-details" hidden>
+        <p>
+          The comparison weighs (1) direct property disclosures and
+          geotechnical findings, (2) slope and coastal setting,
+          (3) regional landslide mapping and city planning information,
+          and (4) rainfall as a possible trigger. The Pacifica rating
+          is supported by explicit evidence of landslide-related damage
+          and a non-occupancy recommendation. The Sacramento rating is
+          a relative, regional assessment based on flat terrain and
+          citywide findings. A licensed geotechnical engineer would
+          need to evaluate either parcel to make a site-specific
+          determination.
+        </p>
+      </div>
+    </section>
+
+    <!-- SOURCES -->
+    <section class="section sources-section" id="sources">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">04 / RESEARCH & REFERENCES</p>
+          <h2>Follow the evidence</h2>
+        </div>
+
+        <p class="section-note">
+          Property photos and listing facts are linked to the real
+          estate listings. Hazard and climate context comes from
+          government sources.
+        </p>
+      </div>
+
+      <ol class="sources-list">
+        <li>
+          <a
+            href="https://www.zillow.com/homedetails/189-Kent-Rd-Pacifica-CA-94044/58660690_zpid/"
+            target="_blank"
+            rel="noopener"
+          >
+            Zillow — 189 Kent Road, Pacifica
+          </a>
+          <span>
+            Listing price, size, photos, and disclosure of landslide-related
+            foundation and structural issues.
+          </span>
+        </li>
+
+        <li>
+          <a
+            href="https://www.zillow.com/homedetails/4328-62nd-St-Sacramento-CA-95820/25811166_zpid/"
+            target="_blank"
+            rel="noopener"
+          >
+            Zillow — 4328 62nd Street, Sacramento
+          </a>
+          <span>
+            Property description, size, photos, and features.
+          </span>
+        </li>
+
+        <li>
+          <a
+            href="https://www.conservation.ca.gov/cgs/hazards/landslides"
+            target="_blank"
+            rel="noopener"
+          >
+            California Geological Survey — Landslides
+          </a>
+          <span>
+            Explains landslide inventories, susceptibility maps, slope,
+            rock strength, and triggering events.
+          </span>
+        </li>
+
+        <li>
+          <a
+            href="https://www.cityofsacramento.gov/content/dam/portal/pw/mas/climate-action/sacadapt/SacAdapt_VulnerabilityAssessment.pdf"
+            target="_blank"
+            rel="noopener"
+          >
+            City of Sacramento — Climate Vulnerability Assessment, section 3.1.3
+          </a>
+          <span>
+            States that landslides are not a major threat in the city
+            given its flat terrain.
+          </span>
+        </li>
+
+        <li>
+          <a
+            href="https://www.ncei.noaa.gov/access/services/data/v1?dataTypes=MLY-TMAX-NORMAL%2CMLY-TMIN-NORMAL%2CMLY-TAVG-NORMAL%2CMLY-PRCP-NORMAL%2CMLY-SNOW-NORMAL&dataset=normals-monthly-1991-2020&format=pdf&stations=USC00046599"
+            target="_blank"
+            rel="noopener"
+          >
+            NOAA NCEI — 1991–2020 monthly climate normals, Pacifica 4 SSE station
+          </a>
+          <span>
+            Annual normal precipitation: 31.88 inches; December mean:
+            6.64 inches.
+          </span>
+        </li>
+
+        <li>
+          <a
+            href="https://www.currentresults.com/Weather/California/average-yearly-city-precipitation.php"
+            target="_blank"
+            rel="noopener"
+          >
+            Average Yearly Precipitation for California Cities
+          </a>
+          <span>
+            Reports approximately 19.2 inches of average annual
+            precipitation for Sacramento.
+          </span>
+        </li>
+
+        <li>
+          <a
+            href="https://documents.coastal.ca.gov/reports/2025/11/F11a/F11a-11-2025-report.pdf"
+            target="_blank"
+            rel="noopener"
+          >
+            California Coastal Commission — Pacifica coastal hazards report
+          </a>
+          <span>
+            Describes coastal bluffs, erosion, and landslide exposure
+            in Pacifica.
+          </span>
+        </li>
+
+        <li>
+          <a
+            href="https://www.usgs.gov/"
+            target="_blank"
+            rel="noopener"
+          >
+            U.S. Geological Survey
+          </a>
+          <span>
+            Source of the regional Pacifica coastal cliff photograph
+            used to illustrate coastal erosion.
+          </span>
+        </li>
+      </ol>
+
+      <p class="disclaimer">
+        Important: “Very high” and “very low” are comparative educational
+        labels for this assignment, not official parcel-level hazard
+        ratings. Regional maps cannot replace a geotechnical report.
+        Listing information and status can change; verify directly
+        before relying on it.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <a class="brand" href="#top">
+      <span class="brand-mark">G</span> GROUNDED
+    </a>
+
+    <p>Look beyond the listing. Understand the land.</p>
+
+    <p>Created for an educational landslide-risk comparison · 2026</p>
+  </footer>
+</body>
+</html>
